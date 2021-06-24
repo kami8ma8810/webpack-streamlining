@@ -21,14 +21,14 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-          }
+          },
         ],
       },
       {
         test: /\.png|\.jpg/,
-        type: 'asset/resource',
+        type: 'asset/resource', //for webpack5
         generator: {
-          filename: 'images/[name][ext]',
+          filename: 'images/[name][ext]', //for webpack5
         },
         use: [
           // {
